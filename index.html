@@ -4,9 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Volkoff — Kiryl Volkau</title>
-<meta name="description" content="I'm Kiryl Volkau, an independent developer building my own software products under Volkoff. Currently building Flax." />
+<meta name="description" content="I'm Kiryl Volkau, an independent developer building my own software products under Volkoff. Currently building Flax and Jigward." />
 <meta property="og:title" content="Volkoff — Kiryl Volkau" />
-<meta property="og:description" content="Independent developer building my own software products. Currently: Flax." />
+<meta property="og:description" content="Independent developer building my own software products. Currently: Flax and Jigward." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://volkoff.dev" />
 <style>
@@ -53,8 +53,12 @@
   @media(max-width:560px){.grid{grid-template-columns:1fr}}
   .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;transition:.15s}
   .card:hover{box-shadow:0 8px 30px rgba(15,23,42,.07);transform:translateY(-2px)}
+  a.card{display:block}
+  a.card:hover h3 .go{opacity:1;transform:translateX(2px)}
   .card h3{font-size:1.15rem;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+  .card h3 .go{margin-left:auto;color:var(--accent);font-weight:700;opacity:.55;transition:.15s}
   .card p{color:var(--muted);margin-top:8px;font-size:.96rem}
+  .card .site{display:inline-block;margin-top:12px;font-size:13px;font-weight:600;color:var(--accent)}
   .badge{font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;letter-spacing:.02em}
   .badge.dev{background:var(--amber-bg);color:var(--amber)}
   .badge.soon{background:var(--soft);color:var(--muted)}
@@ -90,7 +94,7 @@
     <div class="avatar">KV</div>
     <h1>I build my own<br>software products.</h1>
     <!-- EDIT: tweak this intro line to sound like you -->
-    <p class="lead">I'm <strong>Kiryl Volkau</strong>, an independent developer. I design and build my own products under <strong>Volkoff</strong>, my one-person company. Right now, everything goes into <strong>Flax</strong>.</p>
+    <p class="lead">I'm <strong>Kiryl Volkau</strong>, an independent developer. I design and build my own products under <strong>Volkoff</strong>, my one-person company. Right now that's <strong>Flax</strong> and <strong>Jigward</strong>.</p>
     <div class="cta">
       <a class="btn primary" href="#projects">See what I'm building →</a>
       <a class="btn ghost" href="#contact">Get in touch</a>
@@ -108,10 +112,11 @@
         <!-- EDIT: one honest line about Flax -->
         <p>The product I'm focused on right now. More to share as it takes shape.</p>
       </div>
-      <div class="card">
-        <h3>What's next <span class="badge soon">Early</span></h3>
-        <p>I work on one thing at a time. Flax comes first — I'll add new products here as I start them.</p>
-      </div>
+      <a class="card" href="https://jigward.com" target="_blank" rel="noopener">
+        <h3>Jigward <span class="badge dev">In development</span> <span class="go">↗</span></h3>
+        <p>Your AI engineering coworker — it picks up work from the tools your team already uses and does it with the context of your organization.</p>
+        <span class="site">jigward.com</span>
+      </a>
     </div>
   </div>
 </section>
@@ -121,7 +126,7 @@
     <div class="eyebrow">About</div>
     <h2>A bit about me</h2>
     <!-- EDIT: make this paragraph your own -->
-    <p class="section-lead">It's just me. I'm a solo developer based in Austin, Texas, building software I want to exist. Volkoff is the company I build it under — kept deliberately small and independent: no big team, no investors, just me shipping one product at a time. Sometimes I open-source small tools I make along the way.</p>
+    <p class="section-lead">It's just me. I'm a solo developer based in Austin, Texas, building software I want to exist. Volkoff is the company I build it under — kept deliberately small and independent: no big team, no investors, just me and the products. Sometimes I open-source small tools I make along the way.</p>
     <div class="links">
       <a class="chip" href="https://www.linkedin.com/in/kvolkau/" target="_blank" rel="noopener">LinkedIn</a>
       <a class="chip" href="https://github.com/kiryl-volkau" target="_blank" rel="noopener">GitHub</a>
